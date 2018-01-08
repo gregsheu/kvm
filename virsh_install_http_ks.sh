@@ -1,0 +1,1 @@
+sudo virt-install --name=centos1dev1 --arch=x86_64 --vcpus=1 --ram=2048 --os-type=linux --nographics -v --network bridge:br0 --disk path=/lv_vol0/centos1dev1.img,size=40,sparse=false --accelerate -l http://192.168.1.100/centos/7 --extra-args='ks=http://192.168.1.100/centos/7/ks.cfg console=ttyS0'
