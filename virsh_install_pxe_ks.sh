@@ -1,0 +1,1 @@
+sudo virt-install --name=centos1dev1 --arch=x86_64 --vcpus=1 --ram=2048 --os-type=linux -v --network bridge:br0 --disk path=/lv_vol0/centos1dev1.img,size=40,sparse=false --accelerate --pxe --vnc --vnclisten=0.0.0.0
